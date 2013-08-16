@@ -3,17 +3,19 @@
     xmlns:custom="http://schemas.android.com/apk/res/com.nichtemna.manystatestoggler"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity" >
 
     <com.temna.threestatetoggle.ToggleLayout
         android:id="@+id/main_toggle_layout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
 
         <com.temna.threestatetoggle.ToggleImageButton
             android:layout_width="60dip"
             android:layout_height="60dip"
-            android:src="@android:drawable/ic_delete"
+            android:src="@android:drawable/btn_star_big_on"
             custom:checkedImage="@drawable/toggle_checked_left"
             custom:uncheckedImage="@drawable/toggle_unchecked_left" />
 
@@ -35,20 +37,6 @@
             android:layout_width="60dip"
             android:layout_height="60dip"
             android:src="@android:drawable/btn_star_big_on"
-            custom:checkedImage="@drawable/toggle_checked_center"
-            custom:uncheckedImage="@drawable/toggle_unchecked_center" />
-
-        <com.temna.threestatetoggle.ToggleImageButton
-            android:layout_width="60dip"
-            android:layout_height="60dip"
-            android:src="@android:drawable/btn_star_big_on"
-            custom:checkedImage="@drawable/toggle_checked_center"
-            custom:uncheckedImage="@drawable/toggle_unchecked_center" />
-
-        <com.temna.threestatetoggle.ToggleImageButton
-            android:layout_width="60dip"
-            android:layout_height="60dip"
-            android:src="@android:drawable/btn_star_big_off"
             custom:checked="true"
             custom:checkedImage="@drawable/toggle_checked_right"
             custom:uncheckedImage="@drawable/toggle_unchecked_right" />
